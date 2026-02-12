@@ -14,15 +14,15 @@
 
 ---
 
-![[HZNUCTF 2023 final]虽然他送了我玫瑰花_1](./images/%5bHZNUCTF 2023 final%5d虽然他送了我玫瑰花_1.png)
+![[HZNUCTF 2023 final]虽然他送了我玫瑰花_1](./images/%5BHZNUCTF 2023 final%5D虽然他送了我玫瑰花_1.png)
 
 由可知判断条件只会跳转jz，所以jnz是没用的花指令，把这行指令nop掉再重新编译主函数
 
-![[HZNUCTF 2023 final]虽然他送了我玫瑰花_2](./images/%5bHZNUCTF 2023 final%5d虽然他送了我玫瑰花_2.png)
+![[HZNUCTF 2023 final]虽然他送了我玫瑰花_2](./images/%5BHZNUCTF 2023 final%5D虽然他送了我玫瑰花_2.png)
 
 然后查看主函数伪代码
 
-![[HZNUCTF 2023 final]虽然他送了我玫瑰花_3](./images/%5bHZNUCTF 2023 final%5d虽然他送了我玫瑰花_3.png)
+![[HZNUCTF 2023 final]虽然他送了我玫瑰花_3](./images/%5BHZNUCTF 2023 final%5D虽然他送了我玫瑰花_3.png)
 
 这个逻辑是输入29长度的字符串，然后经过函数组funcs_40117E的变换之后再和已有的字符串进行对比来判断flag是否正确，已有的字符串为6CE1CA267159DFE8247A4EFBCE517E7Fh，因为这个程序为小端序，所以是7F7E51CEFB4E7A24E8DF597126CAE16C
 
